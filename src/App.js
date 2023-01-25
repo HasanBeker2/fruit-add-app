@@ -43,7 +43,7 @@ function App() {
   //   const newFruit = fruitsArray[randomIndex];
   //   fruitsArray.splice(randomIndex, 1);
   //   setFruits([newFruit, ...fruits]);
-    
+
   // }
   // }
   function addFruit() {
@@ -55,7 +55,7 @@ function App() {
       const newFruit = { fruitName: fruitsArray[randomIndex], id: Date.now() + fruitsArray.length + randomIndex };
       //fruitsArray.splice(randomIndex, 1);
       setFruits([...fruits, newFruit]);
-      
+
     }
   }
 
@@ -65,7 +65,6 @@ function App() {
       <h1>Where should the state go?</h1>
       <Fruits fruits={fruits} />
       <FruitsCounter fruitsCount={fruits} />
-      {/* <button onClick={addFruit}>Add Orange Fruit</button> */}
       <button className="add-orange-fruit-button" onClick={addFruit}>Add a Random Fruit</button>
 
     </div>
