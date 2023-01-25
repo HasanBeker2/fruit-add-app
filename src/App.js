@@ -51,7 +51,6 @@ function App() {
       alert("there is no more fruit in the basket");
     } else {
       const randomIndex = Math.floor(Math.random() * fruitsArray.length);
-      //const newFruit = { fruitName: fruitsArray[randomIndex], id: randomIndex + 4 };
       const newFruit = { fruitName: fruitsArray[randomIndex], id: Date.now() + fruitsArray.length + randomIndex };
       //fruitsArray.splice(randomIndex, 1);
       setFruits([...fruits, newFruit]);
